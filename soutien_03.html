@@ -86,7 +86,23 @@
 
     <!-- javascript part -->
     <script type="text/javascript">
+        function multiply(numberA,numberB){
 
+            return ( numberA * numberB)
+        }
+
+        function calculerProduit() {
+            let nA = parseFloat(document.getElementById("number-A").value);
+            let nB = parseFloat(document.getElementById("number-B").value);
+            
+            if ( isNaN(nA) ||  isNaN(nB)){
+                alert("Les valeurs saisies ne sont pas des nombres !");
+                return;
+            }
+            result = multiply(nA, nB);
+
+            displayResult(result)
+            }
         // code here for the function multiply
 
         // code here for the function that is called on 'click'
@@ -97,3 +113,5 @@
 </body>
 
 </html>
+
+

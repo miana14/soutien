@@ -78,16 +78,21 @@
     <!-- javascript part -->
     <script type="text/javascript">
 
-        let numberA = document.getElementById("number").value;
+        
 
         function afficherMessage() {
-            
+            let numberA = document.getElementById("number").value;
+            // la variable numberA doit se trouver a l'intérieur de la fonction car elle va retourner la valeur du id
+            numberA = parseInt(numberA);
+            // pour éviter les confusions on établi numberA comme étant un nombre entier 
             if ((numberA < 10) || (numberA > 100)) {
                 alert ("Erreur de saisie");
                 return;
             }
+            // si numberA est une valeur en dessous de 10 et au dessus de 100 afficher erreur de saisie
                 
             displayResult('Vous avez choisi :', numberA);
+            // displayResult pour afficher le message avec la velur de number A
         }
 
     </script>

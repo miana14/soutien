@@ -18,10 +18,12 @@
         <ul>
             <li>faire les points dans l'ordre et ne passer au point suivant que lorsque le précédent est achevé
                 et testé,</li>
-            <li>utiliser la console autant que nécessaire Pour bien observer le contenu et le type des différentes variables,</li>
+            <li>utiliser la console autant que nécessaire Pour bien observer le contenu et le type des différentes
+                variables,</li>
             <li>écrire du code structuré et correctement indenté,</li>
             <li>écrire du code <strong>largement documenté !</strong></li>
-            <li>l'ajout du code JavaScript est fait entre les balises &lt;script&gt;...&lt;script&gt; de ce fichiet html</li>
+            <li>l'ajout du code JavaScript est fait entre les balises &lt;script&gt;...&lt;script&gt; de ce fichiet html
+            </li>
         </ul>
         <p>Eléments de départ fournis quel que soit l'exercice :</p>
         <ul>
@@ -35,15 +37,17 @@
                     <li>une fonction de génération d'une série aléatoire de nombres entiers rangés dans un tableau de
                         type Array,</li>
                 </ul>
-                L'utilisation de ces outils n'est pas systématiquement nécessaire (cela dépend des exercices). Par contre, 
+                L'utilisation de ces outils n'est pas systématiquement nécessaire (cela dépend des exercices). Par
+                contre,
                 <span class="text-danger">vous n'avez, en aucun cas, besoin</span> :
                 <ul>
                     <li><span class="text-danger">de modifier le code</span> de ces outils,</li>
-                    <li><span class="text-danger">de copier le code</span> des fonctions contenues dans <em>tools.js</em> dans 
+                    <li><span class="text-danger">de copier le code</span> des fonctions contenues dans
+                        <em>tools.js</em> dans
                         votre propre code.<br>
                         Si vous utilisez les fonctions outils, vous ne pouvez que les "appeler".</li>
                 </ul>
-                
+
             </li>
         </ul>
         <h5 class="text-success text-center">Que la force soit avec vous !</h5>
@@ -53,11 +57,13 @@
     <div class="card subject">
         <p class="h6 font-weight-bold text-center">Soutien #04 - Jouer avec les boucles</p>
         <ul>
-            <li>Pour les nombres entiers allant de 0 à 12, il s'agit de faire le calcul suivant : <em>nombre * (nombre + 1)</em> </li>
+            <li>Pour les nombres entiers allant de 0 à 12, il s'agit de faire le calcul suivant : <em>nombre * (nombre +
+                    1)</em> </li>
             <li>L'affichage des résultats peut se faire dans la console à chaque calcul.</li>
             <li>Questions annexes auxquelle vous pouvez répondre dans les commentaires du code :
                 <ol>
-                    <li>Que faudrait-il changer dans le code pour faire les calculs seulement sur les nombres pairs ?</li>
+                    <li>Que faudrait-il changer dans le code pour faire les calculs seulement sur les nombres pairs ?
+                    </li>
                     <li>Que faut-il changer pour faire les calculs sur les nombres de 5 à 15 ?</li>
                     <li>Que faut-il changer et/ou ajouter dans le code pour faire les calculs depuis 0 jusqu'à un nombre
                         que l'utilisateur saisirait ?</li>
@@ -83,9 +89,16 @@
     <!-- javascript part -->
     <script type="text/javascript">
 
-    function lancer() {
+        function lancer() {
+
+            for (let i = 0; i <= 12; i++) {
+                result = i * (i + 1);
+                console.log (result);
+            }
+        }
+
+
         // Code here
-    }
 
     </script>
 

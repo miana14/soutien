@@ -18,10 +18,12 @@
         <ul>
             <li>faire les points dans l'ordre et ne passer au point suivant que lorsque le précédent est achevé
                 et testé,</li>
-            <li>utiliser la console autant que nécessaire Pour bien observer le contenu et le type des différentes variables,</li>
+            <li>utiliser la console autant que nécessaire Pour bien observer le contenu et le type des différentes
+                variables,</li>
             <li>écrire du code structuré et correctement indenté,</li>
             <li>écrire du code <strong>largement documenté !</strong></li>
-            <li>l'ajout du code JavaScript est fait entre les balises &lt;script&gt;...&lt;script&gt; de ce fichiet html</li>
+            <li>l'ajout du code JavaScript est fait entre les balises &lt;script&gt;...&lt;script&gt; de ce fichiet html
+            </li>
         </ul>
         <p>Eléments de départ fournis quel que soit l'exercice :</p>
         <ul>
@@ -35,15 +37,17 @@
                     <li>une fonction de génération d'une série aléatoire de nombres entiers rangés dans un tableau de
                         type Array,</li>
                 </ul>
-                L'utilisation de ces outils n'est pas systématiquement nécessaire (cela dépend des exercices). Par contre, 
+                L'utilisation de ces outils n'est pas systématiquement nécessaire (cela dépend des exercices). Par
+                contre,
                 <span class="text-danger">vous n'avez, en aucun cas, besoin</span> :
                 <ul>
                     <li><span class="text-danger">de modifier le code</span> de ces outils,</li>
-                    <li><span class="text-danger">de copier le code</span> des fonctions contenues dans <em>tools.js</em> dans 
+                    <li><span class="text-danger">de copier le code</span> des fonctions contenues dans
+                        <em>tools.js</em> dans
                         votre propre code.<br>
                         Si vous utilisez les fonctions outils, vous ne pouvez que les "appeler".</li>
                 </ul>
-                
+
             </li>
         </ul>
         <h5 class="text-success text-center">Que la force soit avec vous !</h5>
@@ -53,11 +57,13 @@
     <div class="card subject">
         <p class="h6 font-weight-bold text-center">Soutien #05 - Jouer avec les boucles et les tableaux</p>
         <ul>
-            <li>Repartir du code précédent pour faire la même chose mais, désormais, le résultat de chaque calcul n'est pas 
+            <li>Repartir du code précédent pour faire la même chose mais, désormais, le résultat de chaque calcul n'est
+                pas
                 affiché dans la console mais <strong>rangé dans un tableau</strong>.</li>
-            <li>L'affichage des résultats se fait à la fin des itérations de la boucle en utilisant (sans la modifier, ni la déplacer !) 
+            <li>L'affichage des résultats se fait à la fin des itérations de la boucle en utilisant (sans la modifier,
+                ni la déplacer !)
                 la fonction <em>displayArray()</em> fournie dans tools.js.<br>
-                Même si vous n'en comprenez (pas encore) son fonctionnement, bien lire ce que fait cette fonction pour 
+                Même si vous n'en comprenez (pas encore) son fonctionnement, bien lire ce que fait cette fonction pour
                 une utilisation correcte.
             </li>
         </ul>
@@ -75,14 +81,22 @@
     <!-- html display area wrapper -->
     <div class="card result" id="result">
     </div>
-    
+
 
     <!-- javascript part -->
     <script type="text/javascript">
 
-    function lancer() {
-        // Code here
-    }
+        function lancer() {
+            let array = [];
+
+            for (let i = 0; i <= 12; i++) {
+                result = i * (i + 1);
+                console.log(result);
+                array.push(result)
+            }
+            displayArray(array)
+            // Code here
+        }
 
     </script>
 

@@ -84,13 +84,21 @@
 
     <!-- javascript part -->
     <script type="text/javascript">
-
+    let tab = [];
     function genererTableau() {
-
+        tab = randomArrayOfIntFromInterval(20, 0, 100);
+        return;
     }
 
     function filtrerTableau() {
-
+        let newTab = [];
+        for(let i =0; i<newTab.length; i++){
+            if (tab[i]>50){
+                newTab.push(tab[i]);
+                return;
+            }
+        }
+        displayArray(newTab)
     }
 
     </script>
